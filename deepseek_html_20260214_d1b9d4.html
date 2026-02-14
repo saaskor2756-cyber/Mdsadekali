@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Sadek Ali - Cyber Security & Digital Growth Expert in Qatar</title>
+    
+    <!-- Meta Tags for SEO -->
+    <meta name="description" content="MD Sadek Ali - Cyber Security & Digital Growth Expert in Qatar. Specializing in account security, payment solutions, Facebook Ads, and digital marketing.">
+    <meta name="keywords" content="Cyber Security Qatar, Virtual Card Expert Qatar, Facebook Ads Expert Qatar, Online Payment Consultant Qatar">
+    <meta name="author" content="MD Sadek Ali">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons (alternative to Lucide) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* Custom Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            color: #f3f4f6;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 255, 255, 0.03) 0%, transparent 30%),
+                radial-gradient(circle at 90% 50%, rgba(59, 130, 246, 0.03) 0%, transparent 40%),
+                repeating-linear-gradient(45deg, rgba(0, 255, 255, 0.02) 0px, rgba(0, 255, 255, 0.02) 1px, transparent 1px, transparent 10px);
+        }
+        
+        .glass-card {
+            background: rgba(15, 23, 42, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            border-radius: 1rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+        }
+        
+        .glass-card:hover {
+            border-color: rgba(0, 255, 255, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 255, 255, 0.15);
+        }
+        
+        .neon-text {
+            color: #22d3ee;
+            font-family: 'JetBrains Mono', monospace;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+        
+        .cyber-border {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cyber-border::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border: 2px solid transparent;
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .cyber-border:hover::before {
+            border-color: rgba(0, 255, 255, 0.5);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+        }
+        
+        .social-link {
+            padding: 0.75rem;
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+            border-radius: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            border-color: rgba(0, 255, 255, 0.5);
+            transform: scale(1.1);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(59, 130, 246, 0.1));
+        }
+        
+        .animate-glow {
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 10px rgba(0, 255, 255, 0.3); }
+            to { text-shadow: 0 0 20px rgba(0, 255, 255, 0.6), 0 0 30px rgba(59, 130, 246, 0.4); }
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: rgba(0, 255, 255, 0.3);
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-slate-900/95 backdrop-blur-md py-4">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-2">
+                    <i class="fas fa-shield-alt text-cyan-400 text-2xl"></i>
+                    <span class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+                        MD Sadek Ali
+                    </span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-300 hover:text-cyan-400 transition-colors font-medium">Home</a>
+                    <a href="#services" class="text-gray-300 hover:text-cyan-400 transition-colors font-medium">Services</a>
+                    <a href="#about" class="text-gray-300 hover:text-cyan-400 transition-colors font-medium">About</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-cyan-400 transition-colors font-medium">Portfolio</a>
+                    <a href="#blog" class="text-gray-300 hover:text-cyan-400 transition-colors font-medium">Blog</a>
+                    <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition-colors font-medium">Contact</a>
+                    <a href="https://wa.me/97470592528" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/30 transition-all">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-gray-300 hover:text-cyan-400">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="md:hidden hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-md border-t border-cyan-500/20">
+                <div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                    <a href="#" class="text-gray-300 hover:text-cyan-400 transition-colors py-2">Home</a>
+                    <a href="#services" class="text-gray-300 hover:text-cyan-400 transition-colors py-2">Services</a>
+                    <a href="#about" class="text-gray-300 hover:text-cyan-400 transition-colors py-2">About</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-cyan-400 transition-colors py-2">Portfolio</a>
+                    <a href="#blog" class="text-gray-300 hover:text-cyan-400 transition-colors py-2">Blog</a>
+                    <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition-colors py-2">Contact</a>
+                    <a href="https://wa.me/97470592528" target="_blank" class="bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-3 rounded-lg font-semibold text-center">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Background Effects -->
+        <div class="absolute inset-0">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-cyan-500/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-4 md:px-6 relative z-10">
+            <div class="max-w-5xl mx-auto text-center">
+                <!-- Name - Massive and Bold -->
+                <h1 class="text-6xl md:text-8xl lg:text-9xl font-black uppercase mb-6">
+                    <span class="bg-gradient-to-r from-cyan-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent animate-glow">
+                        MD Sadek Ali
+                    </span>
+                </h1>
+
+                <!-- Main Headline -->
+                <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4">
+                    Cyber Security & Digital Growth Expert in Qatar
+                </h2>
+
+                <!-- Subheadline -->
+                <p class="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+                    Helping Businesses & Individuals Secure, Grow & Monetize Online Safely
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <button onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})" class="group bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-cyan-500/30 transition-all flex items-center justify-center gap-2">
+                        Explore Services
+                        <i class="fas fa-arrow-right w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                    
+                    <a href="https://wa.me/97470592528" target="_blank" class="border-2 border-cyan-500/50 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-cyan-500/10 hover:border-cyan-400 transition-all flex items-center justify-center gap-2">
+                        Free Consultation
+                        <i class="fas fa-shield-alt w-5 h-5"></i>
+                    </a>
+                </div>
+
+                <!-- Social Links Row -->
+                <div class="flex items-center justify-center gap-4">
+                    <a href="https://www.facebook.com/MdSadekAli2756" target="_blank" class="social-link group" aria-label="Facebook">
+                        <i class="fab fa-facebook-f text-[#1877F2] text-xl group-hover:scale-110 transition-transform"></i>
+                    </a>
+                    <a href="https://instagram.com/saaskor" target="_blank" class="social-link group" aria-label="Instagram">
+                        <i class="fab fa-instagram text-[#E4405F] text-xl group-hover:scale-110 transition-transform"></i>
+                    </a>
+                    <a href="https://wa.me/97470592528" target="_blank" class="social-link group" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp text-[#25D366] text-xl group-hover:scale-110 transition-transform"></i>
+                    </a>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="mt-12 flex flex-wrap justify-center gap-8">
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-shield-alt text-cyan-400"></i>
+                        <span class="text-gray-400">100+ Clients Protected</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-shield-alt text-cyan-400"></i>
+                        <span class="text-gray-400">5+ Years Experience</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fas fa-shield-alt text-cyan-400"></i>
+                        <span class="text-gray-400">Qatar Market Expert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-slate-900/30">
+        <div class="container mx-auto px-4 md:px-6">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    My <span class="text-cyan-400">Expertise</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Comprehensive digital security and growth solutions tailored for Qatar market
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1: Cyber Security -->
+                <div class="glass-card p-6">
+                    <div class="mb-4">
+                        <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-cyan-400 text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Cyber Security Consulting</h3>
+                    <p class="text-gray-400 mb-4">Protect your digital assets with professional security guidance</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Account security setup</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Two-factor authentication guidance</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Risk assessment for social accounts</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Basic cyber awareness training</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Learn More <i class="fas fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <!-- Service 2: Virtual Card -->
+                <div class="glass-card p-6">
+                    <div class="mb-4">
+                        <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center">
+                            <i class="fas fa-credit-card text-cyan-400 text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Virtual Card & Payment Solutions</h3>
+                    <p class="text-gray-400 mb-4">Secure payment processing and virtual card expertise</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Virtual card setup guidance</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Payment gateway support</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Deposit troubleshooting</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Blockchain transaction guidance</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Learn More <i class="fas fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <!-- Service 3: Ads Management -->
+                <div class="glass-card p-6">
+                    <div class="mb-4">
+                        <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center">
+                            <i class="fas fa-bullhorn text-cyan-400 text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Facebook & Google Ads Management</h3>
+                    <p class="text-gray-400 mb-4">Data-driven advertising campaigns that convert</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Campaign setup</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Target audience optimization</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Qatar market targeting</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Conversion-focused ad strategy</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Learn More <i class="fas fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <!-- Service 4: Digital Consulting -->
+                <div class="glass-card p-6">
+                    <div class="mb-4">
+                        <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center">
+                            <i class="fas fa-briefcase text-cyan-400 text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Digital Product Consulting</h3>
+                    <p class="text-gray-400 mb-4">Launch and monetize your digital products</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>E-commerce guidance</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Product launch strategy</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Landing page setup</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Monetization strategy</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Learn More <i class="fas fa-arrow-right text-sm"></i></a>
+                </div>
+
+                <!-- Service 5: Social Media Growth -->
+                <div class="glass-card p-6">
+                    <div class="mb-4">
+                        <div class="w-14 h-14 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center">
+                            <i class="fas fa-users text-cyan-400 text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Social Media Growth</h3>
+                    <p class="text-gray-400 mb-4">Build and engage your audience effectively</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Profile optimization</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Engagement strategy</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Branding consultation</li>
+                        <li class="flex items-start gap-2 text-sm text-gray-300"><span class="text-cyan-400 mt-1">•</span>Content strategy</li>
+                    </ul>
+                    <a href="#contact" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors font-medium">Learn More <i class="fas fa-arrow-right text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Left Column - Stats -->
+                <div class="relative">
+                    <div class="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur-2xl opacity-20"></div>
+                    <div class="relative bg-slate-900/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-8">
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="text-center p-4">
+                                <i class="fas fa-shield-alt text-cyan-400 text-3xl mb-3"></i>
+                                <div class="text-3xl font-bold text-white">100+</div>
+                                <div class="text-gray-400">Clients</div>
+                            </div>
+                            <div class="text-center p-4">
+                                <i class="fas fa-globe text-cyan-400 text-3xl mb-3"></i>
+                                <div class="text-3xl font-bold text-white">5+</div>
+                                <div class="text-gray-400">Years</div>
+                            </div>
+                            <div class="text-center p-4">
+                                <i class="fas fa-bullseye text-cyan-400 text-3xl mb-3"></i>
+                                <div class="text-3xl font-bold text-white">95%</div>
+                                <div class="text-gray-400">Success Rate</div>
+                            </div>
+                            <div class="text-center p-4">
+                                <i class="fas fa-headset text-cyan-400 text-3xl mb-3"></i>
+                                <div class="text-3xl font-bold text-white">24/7</div>
+                                <div class="text-gray-400">Support</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Content -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                        About <span class="text-cyan-400">MD Sadek Ali</span>
+                    </h2>
+                    <p class="text-lg text-gray-300 mb-6">
+                        MD Sadek Ali is a cyber security-focused digital consultant with hands-on experience in:
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                        <div class="flex items-start gap-2"><i class="fas fa-check-circle text-cyan-400 mt-1"></i><span class="text-gray-300">Online payment systems</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-check-circle text-cyan-400 mt-1"></i><span class="text-gray-300">Virtual card solutions</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-check-circle text-cyan-400 mt-1"></i><span class="text-gray-300">Facebook & Google Ads setup</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-check-circle text-cyan-400 mt-1"></i><span class="text-gray-300">Account security & recovery</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-check-circle text-cyan-400 mt-1"></i><span class="text-gray-300">Deposit troubleshooting</span></div>
+                        <div class="flex items-start gap-2"><i class="fas fa-check-circle text-cyan-400 mt-1"></i><span class="text-gray-300">Digital product marketing</span></div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 bg-slate-900/50 rounded-lg border border-cyan-500/20">
+                        <i class="fas fa-lock text-cyan-400 text-2xl"></i>
+                        <div>
+                            <h4 class="font-bold text-white">Trusted Security Expert</h4>
+                            <p class="text-sm text-gray-400">Specialized in Qatar market & international solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-slate-900/30">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    Success <span class="text-cyan-400">Stories</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Real results from real clients - See how I've helped businesses in Qatar and beyond
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Portfolio Item 1 -->
+                <div class="group relative overflow-hidden rounded-xl bg-slate-900/50 border border-cyan-500/20 hover:border-cyan-500/40 transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="E-commerce Security" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <span class="text-xs font-mono text-cyan-400 mb-1 block">Cyber Security</span>
+                            <h3 class="text-white font-bold mb-1">E-commerce Security Setup</h3>
+                            <p class="text-sm text-gray-300 mb-3">Implemented comprehensive security measures</p>
+                            <button class="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 text-sm">View Case Study <i class="fas fa-external-link-alt text-xs"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="group relative overflow-hidden rounded-xl bg-slate-900/50 border border-cyan-500/20 hover:border-cyan-500/40 transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Facebook Ads" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <span class="text-xs font-mono text-cyan-400 mb-1 block">Digital Marketing</span>
+                            <h3 class="text-white font-bold mb-1">Facebook Ads Campaign</h3>
+                            <p class="text-sm text-gray-300 mb-3">150% ROAS increase for local brand</p>
+                            <button class="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 text-sm">View Case Study <i class="fas fa-external-link-alt text-xs"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="group relative overflow-hidden rounded-xl bg-slate-900/50 border border-cyan-500/20 hover:border-cyan-500/40 transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Payment Solutions" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <span class="text-xs font-mono text-cyan-400 mb-1 block">Payment Solutions</span>
+                            <h3 class="text-white font-bold mb-1">Payment Gateway Integration</h3>
+                            <p class="text-sm text-gray-300 mb-3">Virtual card setup for freelancers</p>
+                            <button class="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 text-sm">View Case Study <i class="fas fa-external-link-alt text-xs"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="group relative overflow-hidden rounded-xl bg-slate-900/50 border border-cyan-500/20 hover:border-cyan-500/40 transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Account Recovery" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-0 left-0 right-0 p-4">
+                            <span class="text-xs font-mono text-cyan-400 mb-1 block">Security</span>
+                            <h3 class="text-white font-bold mb-1">Account Recovery Case</h3>
+                            <p class="text-sm text-gray-300 mb-3">Recovered hacked business accounts</p>
+                            <button class="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 text-sm">View Case Study <i class="fas fa-external-link-alt text-xs"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    Why Choose <span class="text-cyan-400">Me</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    What makes my approach different and effective for your business
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="glass-card p-6 text-center group hover:border-cyan-500/40 transition-all">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-map-marker-alt text-cyan-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Qatar Market Understanding</h3>
+                    <p class="text-gray-400">Deep knowledge of local business landscape and regulations</p>
+                </div>
+
+                <div class="glass-card p-6 text-center group hover:border-cyan-500/40 transition-all">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-credit-card text-cyan-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Payment Expert</h3>
+                    <p class="text-gray-400">Real experience with deposit issues and payment solutions</p>
+                </div>
+
+                <div class="glass-card p-6 text-center group hover:border-cyan-500/40 transition-all">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-bolt text-cyan-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Practical Solutions</h3>
+                    <p class="text-gray-400">No theory - only proven, actionable strategies</p>
+                </div>
+
+                <div class="glass-card p-6 text-center group hover:border-cyan-500/40 transition-all">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-comment-dots text-cyan-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Fast Communication</h3>
+                    <p class="text-gray-400">Quick responses via WhatsApp, phone, and email</p>
+                </div>
+
+                <div class="glass-card p-6 text-center group hover:border-cyan-500/40 transition-all">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-500/20 to-blue-600/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-shield-alt text-cyan-400 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Trusted Brand</h3>
+                    <p class="text-gray-400">Building long-term relationships based on results</p>
+                </div>
+                
+                <!-- Extra Trust Badge -->
+                <div class="glass-card p-6 col-span-full lg:col-span-3 flex items-center justify-center gap-4 flex-wrap">
+                    <i class="fas fa-check-circle text-cyan-400 text-xl"></i>
+                    <span class="text-white font-semibold">100% Client Satisfaction</span>
+                    <span class="text-gray-400">•</span>
+                    <span class="text-white font-semibold">5+ Years Experience</span>
+                    <span class="text-gray-400">•</span>
+                    <span class="text-white font-semibold">24/7 Support</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-slate-900/30">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    Client <span class="text-cyan-400">Testimonials</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    What clients say about working with me
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Testimonial 1 -->
+                <div class="glass-card p-6 hover:border-cyan-500/40 transition-all">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+                        "MD Sadek Ali helped us secure our business accounts and set up proper payment gateways. His expertise in cyber security and payment solutions is unmatched in Qatar."
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-white">Ahmed Al-Mansoori</h4>
+                        <p class="text-sm text-gray-400">CEO, Qatar Tech Solutions</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="glass-card p-6 hover:border-cyan-500/40 transition-all">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+                        "I was struggling with Facebook Ads until I met Sadek. He optimized my campaigns and within weeks, my sales increased by 150%. Highly recommended!"
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-white">Fatima Hassan</h4>
+                        <p class="text-sm text-gray-400">E-commerce Owner, Doha Fashion</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="glass-card p-6 hover:border-cyan-500/40 transition-all">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+                        "Sadek helped me recover my hacked Facebook account and set up 2FA properly. He also guided me on virtual card solutions for international payments. Life saver!"
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-white">Khalid Rahman</h4>
+                        <p class="text-sm text-gray-400">Freelancer, Digital Nomad</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="glass-card p-6 hover:border-cyan-500/40 transition-all">
+                    <div class="flex gap-1 mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-300 mb-6 text-sm leading-relaxed">
+                        "Professional, knowledgeable, and responsive. Sadek understands the Qatar market perfectly and delivers practical solutions."
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-white">Noor Al-Thani</h4>
+                        <p class="text-sm text-gray-400">Marketing Director, Qatar Business Group</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    Latest <span class="text-cyan-400">Insights</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Expert advice on cyber security, digital marketing, and payment solutions
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Blog Post 1 -->
+                <article class="glass-card overflow-hidden group hover:border-cyan-500/40 transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Facebook Security" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-3">
+                            <span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 rounded-full">Security</span>
+                            <div class="flex items-center gap-1"><i class="far fa-calendar-alt"></i> Feb 15</div>
+                            <div class="flex items-center gap-1"><i class="far fa-clock"></i> 5 min</div>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 line-clamp-2 group-hover:text-cyan-400 transition-colors">How to Secure Your Facebook Account</h3>
+                        <p class="text-sm text-gray-400 mb-4 line-clamp-2">Learn essential steps to protect your Facebook account from hackers.</p>
+                        <a href="#" class="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 text-sm font-medium">Read More <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="glass-card overflow-hidden group hover:border-cyan-500/40 transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Virtual Card" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-3">
+                            <span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 rounded-full">Payments</span>
+                            <div class="flex items-center gap-1"><i class="far fa-calendar-alt"></i> Feb 10</div>
+                            <div class="flex items-center gap-1"><i class="far fa-clock"></i> 7 min</div>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 line-clamp-2 group-hover:text-cyan-400 transition-colors">Best Virtual Card Solutions for Qatar</h3>
+                        <p class="text-sm text-gray-400 mb-4 line-clamp-2">Discover the top virtual card providers for Qatar residents.</p>
+                        <a href="#" class="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 text-sm font-medium">Read More <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="glass-card overflow-hidden group hover:border-cyan-500/40 transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Facebook Ads" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-3">
+                            <span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 rounded-full">Marketing</span>
+                            <div class="flex items-center gap-1"><i class="far fa-calendar-alt"></i> Feb 5</div>
+                            <div class="flex items-center gap-1"><i class="far fa-clock"></i> 8 min</div>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 line-clamp-2 group-hover:text-cyan-400 transition-colors">How to Run Facebook Ads Successfully</h3>
+                        <p class="text-sm text-gray-400 mb-4 line-clamp-2">A comprehensive guide to creating high-converting Facebook ad campaigns.</p>
+                        <a href="#" class="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 text-sm font-medium">Read More <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="glass-card overflow-hidden group hover:border-cyan-500/40 transition-all">
+                    <div class="aspect-video overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Payment Problems" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 text-xs text-gray-500 mb-3">
+                            <span class="px-2 py-1 bg-cyan-500/10 text-cyan-400 rounded-full">Payments</span>
+                            <div class="flex items-center gap-1"><i class="far fa-calendar-alt"></i> Jan 28</div>
+                            <div class="flex items-center gap-1"><i class="far fa-clock"></i> 6 min</div>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 line-clamp-2 group-hover:text-cyan-400 transition-colors">Common Payment Problems & Fixes</h3>
+                        <p class="text-sm text-gray-400 mb-4 line-clamp-2">Troubleshooting guide for common online payment and deposit issues.</p>
+                        <a href="#" class="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 text-sm font-medium">Read More <i class="fas fa-arrow-right text-xs"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-900/30">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    Get In <span class="text-cyan-400">Touch</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Ready to secure and grow your online presence? Let's talk.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Form -->
+                <div class="glass-card p-8">
+                    <h3 class="text-2xl font-bold text-white mb-6">Send Message</h3>
+                    
+                    <form action="mailto:askorsadek@yahoo.com" method="post" enctype="text/plain" class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Your Name</label>
+                            <input type="text" name="name" required class="w-full px-4 py-3 bg-slate-800/50 border border-cyan-500/20 rounded-lg focus:border-cyan-400 focus:outline-none text-white" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+                            <input type="email" name="email" required class="w-full px-4 py-3 bg-slate-800/50 border border-cyan-500/20 rounded-lg focus:border-cyan-400 focus:outline-none text-white" placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                            <textarea name="message" required rows="5" class="w-full px-4 py-3 bg-slate-800/50 border border-cyan-500/20 rounded-lg focus:border-cyan-400 focus:outline-none text-white resize-none" placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/30 transition-all flex items-center justify-center gap-2">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <div class="glass-card p-8">
+                        <h3 class="text-2xl font-bold text-white mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <a href="mailto:askorsadek@yahoo.com" class="flex items-center gap-4 p-4 bg-slate-800/30 rounded-lg hover:bg-slate-800/50 transition-colors group">
+                                <div class="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center group-hover:bg-cyan-500/20 transition-colors">
+                                    <i class="far fa-envelope text-cyan-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Email</p>
+                                    <p class="text-white font-medium">askorsadek@yahoo.com</p>
+                                </div>
+                            </a>
+                            <a href="tel:+97470592528" class="flex items-center gap-4 p-4 bg-slate-800/30 rounded-lg hover:bg-slate-800/50 transition-colors group">
+                                <div class="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center group-hover:bg-cyan-500/20 transition-colors">
+                                    <i class="fas fa-phone-alt text-cyan-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Phone & WhatsApp</p>
+                                    <p class="text-white font-medium">+97470592528</p>
+                                </div>
+                            </a>
+                            <div class="flex items-center gap-4 p-4 bg-slate-800/30 rounded-lg">
+                                <div class="w-12 h-12 rounded-full bg-cyan-500/10 flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-cyan-400"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-gray-400">Location</p>
+                                    <p class="text-white font-medium">Qatar & International</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="glass-card p-8">
+                        <h3 class="text-xl font-bold text-white mb-4">Connect With Me</h3>
+                        <div class="flex gap-4">
+                            <a href="https://www.facebook.com/MdSadekAli2756" target="_blank" class="flex-1 p-4 bg-slate-800/30 rounded-lg hover:bg-[#1877F2]/20 text-center group transition-all">
+                                <i class="fab fa-facebook-f text-[#1877F2] text-xl mb-2 group-hover:scale-110 transition-transform"></i>
+                                <span class="text-sm text-gray-300 block">Facebook</span>
+                            </a>
+                            <a href="https://instagram.com/saaskor" target="_blank" class="flex-1 p-4 bg-slate-800/30 rounded-lg hover:bg-[#E4405F]/20 text-center group transition-all">
+                                <i class="fab fa-instagram text-[#E4405F] text-xl mb-2 group-hover:scale-110 transition-transform"></i>
+                                <span class="text-sm text-gray-300 block">Instagram</span>
+                            </a>
+                            <a href="https://wa.me/97470592528" target="_blank" class="flex-1 p-4 bg-slate-800/30 rounded-lg hover:bg-[#25D366]/20 text-center group transition-all">
+                                <i class="fab fa-whatsapp text-[#25D366] text-xl mb-2 group-hover:scale-110 transition-transform"></i>
+                                <span class="text-sm text-gray-300 block">WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-cyan-500/20">
+        <div class="container mx-auto px-4 md:px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fas fa-shield-alt text-cyan-400 text-2xl"></i>
+                        <span class="text-xl font-bold text-white">MD Sadek Ali</span>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        Cyber Security & Digital Growth Expert helping businesses in Qatar and globally secure, grow, and monetize online.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">About</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Portfolio</a></li>
+                        <li><a href="#blog" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Blog</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Cyber Security</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Payment Solutions</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Ads Management</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Digital Consulting</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-cyan-400 transition-colors text-sm">Social Media Growth</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-white font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center gap-2 text-gray-400 text-sm">
+                            <i class="fas fa-envelope text-cyan-400 text-xs"></i>
+                            askorsadek@yahoo.com
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-400 text-sm">
+                            <i class="fas fa-phone-alt text-cyan-400 text-xs"></i>
+                            +97470592528
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-400 text-sm">
+                            <i class="fab fa-facebook text-cyan-400 text-xs"></i>
+                            /MdSadekAli2756
+                        </li>
+                        <li class="flex items-center gap-2 text-gray-400 text-sm">
+                            <i class="fab fa-instagram text-cyan-400 text-xs"></i>
+                            @saaskor
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-cyan-500/20 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">
+                    © 2024 MD Sadek Ali. All rights reserved. | Cyber Security & Digital Growth Expert in Qatar
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/97470592528" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all hover:scale-110 z-50 animate-bounce">
+        <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('bg-slate-900/95', 'backdrop-blur-md', 'py-4');
+                nav.classList.remove('bg-transparent', 'py-6');
+            } else {
+                nav.classList.add('bg-transparent', 'py-6');
+                nav.classList.remove('bg-slate-900/95', 'backdrop-blur-md', 'py-4');
+            }
+        });
+    </script>
+</body>
+</html>
